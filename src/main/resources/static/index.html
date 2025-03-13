@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega City Cab</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+  <h1>Mega City Cab Management</h1>
+  <nav>
+    <button>Dashboard</button>
+    <button>Customers</button>
+    <button>Bookings</button>
+    <button>Cars</button>
+    <button>Drivers</button>
+    <!-- Logout button will be added dynamically -->
+  </nav>
+</header>
+
+<main id="content">
+  <!-- Content loaded dynamically -->
+</main>
+
+<!-- Loading Modal -->
+<div id="loadingModal" class="modal">
+  <div class="modal-content">
+    <p>Loading...</p>
+  </div>
+</div>
+
+<!-- Error Modal -->
+<div id="errorModal" class="modal">
+  <div class="modal-content">
+    <p id="errorMessage"></p>
+    <button onclick="window.closeModal('errorModal')">Close</button>
+  </div>
+</div>
+
+<script src="/js/utils.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
